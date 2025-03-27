@@ -1,0 +1,166 @@
+
+.login-btn {
+     width: 100%;
+     padding: 10px;
+     background-color: #4c74b9;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     font-size: 16px;
+     cursor: pointer;
+     margin-top: 10px;
+     text-align: center;
+     display: inline-block;
+ }
+
+ .login-btn:hover {
+     background-color: #3a5a9a;
+ }
+
+ #logo-section {
+     width: 40%;
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     border-top-right-radius: 20px;  /* Rounded top-right */
+     border-bottom-right-radius: 20px; /* Rounded bottom-right */
+ }
+
+.button {
+    -fx-background-color: #4A90E2; /* Original color */
+    -fx-text-fill: #ffffff;        /* White text */
+    -fx-font-weight: bold;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 2, 2); /* Subtle shadow */
+    -fx-transition: background-color 0.3s;
+}
+
+.button:hover {
+    -fx-background-color: #6FADED; /* Lighter color on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #3D7ACB; /* Darker shade when clicked */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 4, 4); /* Stronger shadow on click */
+}
+
+.employee-entry {
+    -fx-background-color: #ffffff;       /* White background */
+    -fx-border-color: #203A77;           /* Darker blue border */
+    -fx-border-width: 1;                 /* Thicker border for emphasis */
+    -fx-border-radius: 10;               /* Rounded corners */
+    -fx-background-radius: 10;
+    -fx-padding: 10;
+    -fx-spacing: 15;                     /* Space between profile and text */
+    -fx-alignment: center-left;          /* Align content neatly */
+}
+
+.employee-entry:hover {
+    -fx-background-color: #f0f8ff;       /* Soft blue tint on hover */
+    -fx-cursor: hand;
+}
+
+.employee-entry:pressed {
+    -fx-background-color: #d0e4f2;       /* Darker blue tint when clicked */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 4, 4);
+}
+
+#profilePic {
+    -fx-min-width: 40;
+    -fx-min-height: 40;
+    -fx-max-width: 40;
+    -fx-max-height: 40;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;              /* Circular profile picture */
+    -fx-border-color: #203A77;           /* Darker blue border */
+    -fx-border-width: 2;
+}
+
+#employeeName {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#employeePosition {
+    -fx-text-fill: #7a7a7a;
+    -fx-font-size: 12px;
+}
+
+/* Container Styling */
+.container {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #003366;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-padding: 15px;
+
+}
+
+/* Header Section */
+.header {
+    -fx-background-color: #e6f0ff;
+    -fx-border-color: #003366;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-padding: 10px;
+}
+
+.header .profile-info {
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+    -fx-font-size: 14px;
+}
+
+.status-logged-in {
+    -fx-background-color: #28a745;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 15px;
+    -fx-padding: 5px 15px;
+}
+
+.button-edit {
+    -fx-background-color: #ffc107;
+    -fx-text-fill: #333333;
+    -fx-border-radius: 15px;
+    -fx-padding: 5px 15px;
+}
+
+.button-payslip {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 15px;
+    -fx-padding: 5px 15px;
+}
+
+/* Employee Personal Information */
+.info-section {
+    -fx-background-color: #003366;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 10px;
+    -fx-border-radius: 8px;
+}
+
+.info-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #003366;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+}
+
+/* Label Styling */
+.label-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #003366;
+}
+
+.label-content {
+    -fx-text-fill: #000000;
+}

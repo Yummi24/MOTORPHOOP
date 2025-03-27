@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="1000.0" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.motorphoop.OTRequestController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #203A77; -fx-background-radius: 0px 15px 15px 0px;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="125.0" fitWidth="118.0" layoutX="41.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MotorPH/motorcycle (1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Employees" alignment="BOTTOM_LEFT" layoutX="8.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleEmployees" prefHeight="51.0" prefWidth="165.0" style="-fx-background-color: transparent;" stylesheets="@Login.css" text="Employees" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MotorPH/id-card.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Leaverequest" layoutX="3.0" layoutY="179.0" mnemonicParsing="false" onAction="#handleLeaveRequests" style="-fx-background-color: transparent;" stylesheets="@Login.css" text="Leave Requests" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MotorPH/leave.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="OTrequest" layoutX="4.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleOTRequests" style="-fx-background-color: transparent;" stylesheets="@Login.css" text="OT requests" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MotorPH/overtime.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Timestamp" layoutX="5.0" layoutY="273.0" mnemonicParsing="false" onAction="#handleTimeStamps" style="-fx-background-color: transparent;" stylesheets="@Login.css" text="TimeStamps" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MotorPH/timestamp.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="Logout" layoutX="6.0" layoutY="474.0" maxWidth="173.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="40.0" prefWidth="173.0" style="-fx-background-color: transparent;" stylesheets="@Login.css" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../MotorPH/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="610.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="513.062744140625" endY="-13.0" layoutX="260.0" layoutY="71.0" startX="-247.0" startY="-13.0" />
+            <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MotorPH/user (2).png" />
+               </image>
+            </ImageView>
+            <Text layoutX="72.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" wrappingWidth="242.7138671875" />
+            <Text layoutX="72.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position : " wrappingWidth="242.7138671875" />
+            <ImageView fitHeight="58.0" fitWidth="93.0" layoutX="702.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MotorPH/MOTORPH_LOGO-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutX="23.0" layoutY="143.0" prefHeight="387.0" prefWidth="750.0">
+               <content>
+                  <VBox fx:id="EmployeelistContainer" prefHeight="496.0" prefWidth="921.0">
+                     <children>
+                        <TableView fx:id="otTable" prefHeight="495.0" prefWidth="1085.0">
+                          <columns>
+                            <TableColumn fx:id="employeeIDColumn" prefWidth="96.66665649414062" text="EmployeeID" />
+                            <TableColumn fx:id="nameColumn" prefWidth="147.33334350585938" text="Name" />
+                              <TableColumn fx:id="positionColumn" prefWidth="143.33334350585938" text="Position" />
+                              <TableColumn fx:id="otDateColumn" prefWidth="83.66665649414062" text="OTDate" />
+                              <TableColumn fx:id="startTimeColumn" prefWidth="83.99996948242188" text="StartTime" />
+                              <TableColumn fx:id="endTimeColumn" prefWidth="84.33331298828125" text="EndTime" />
+                              <TableColumn fx:id="hoursColumn" prefWidth="63.0" text="Hours" />
+                              <TableColumn fx:id="reasonColumn" prefWidth="125.0" text="Reason" />
+                              <TableColumn fx:id="statusColumn" prefWidth="104.0" text="Status" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <TextField layoutX="23.0" layoutY="70.0" prefHeight="27.0" prefWidth="235.0" promptText="Search" />
+            <ImageView fitHeight="31.0" fitWidth="39.0" layoutX="256.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MotorPH/magnifying-glass.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Approve" layoutX="509.0" layoutY="66.0" mnemonicParsing="false" onAction="#approveRequest" prefHeight="35.0" prefWidth="120.0" text="Approve" />
+            <Button fx:id="Decline" layoutX="654.0" layoutY="66.0" mnemonicParsing="false" onAction="#declineRequest" prefHeight="35.0" prefWidth="120.0" text="Decline" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

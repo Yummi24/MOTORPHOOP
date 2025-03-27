@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" style="-fx-background-color: #203A77;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.motorphoop.LoginController">
+   <left>
+      <AnchorPane prefHeight="450.0" prefWidth="279.0" style="-fx-background-color: #FBFBFB; -fx-background-radius: 0 20px 20px 0;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="291.0" layoutX="8.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../MotorPH/MOTORPH_LOGO-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="450.0" prefWidth="478.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="login-btn" fx:id="loginButton" layoutX="109.0" layoutY="301.0" mnemonicParsing="false" onAction="#onLoginButtonClick" opacity="0.84" prefHeight="27.0" prefWidth="253.0" style="-fx-background-color: #5075C5; -fx-border-radius: 15px;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <TextField fx:id="usernameField" layoutX="157.0" layoutY="132.0" prefHeight="27.0" prefWidth="264.0" />
+            <Text fill="#f8f8f8" layoutX="44.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+               <font>
+                  <Font name="Gill Sans MT" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#f8f8f8" layoutX="44.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD">
+               <font>
+                  <Font name="Gill Sans MT" size="19.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="passwordField" layoutX="157.0" layoutY="189.0" prefHeight="27.0" prefWidth="264.0" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
