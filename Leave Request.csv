@@ -1,0 +1,20 @@
+Employee ID,Name,Position,Leave Type,Start Date,End Date,Status
+10001,Manuel III Garcia,Chief,Vacation Leave,2024-04-10,2024-04-15,Declined
+10002,Antonio Lim,Chief Operating Officer,Sick Leave,2024,2024-03-27,Pending
+10003,Bianca,Chief Finance Officer,Maternity Leave,2024,2024-09-01,Pending
+10004,Isabella Reyes,Chief Marketing Officer,Emergency Leave,2024-04-05,2024-04-06,Pending
+10005,Eduard Hernandez,IT Operations and Systems,Vacation Leave,2024-05-15,2024-05-18,Pending
+10006,Andrea Mae Villanueva,HR Manager,Sick Leave,2024-03-30,2024-03-31,Pending
+10007,Brad San Jose,HR Team Leader,Parental Leave,2024,2024-07-14,Pending
+10008,Alice Romualdez,HR Rank and File,Emergency Leave,2024-04-02,2024-04-03,Pending
+10009,Rosie Atienza,HR Rank and File,Vacation Leave,2024-05-20,2024-05-25,Pending
+10010,Roderick Alvaro,Accounting Head,Sick Leave,2024-03-28,2024-03-29,Pending
+10011,Anthony Salcedo,Payroll Manager,Vacation Leave,2024-04-15,2024-04-20,Pending
+10012,Josie Lopez,Payroll Team Leader,Emergency Leave,2024-04-07,2024-04-08,Pending
+10013,Martha Farala,Payroll Rank and File,Maternity Leave,2024-06-10,2024-09-10,Pending
+10014,Leila Martinez,Payroll Rank and File,Sick Leave,2024-03-21,2024-03-22,Pending
+10015,Fredrick Romualdez,Account Manager,Vacation Leave,2024-05-05,2024-05-10,Pending
+10016,Christian Eyes,Account Team Leader,Emergency Leave,2024-04-09,2024-04-10,Pending
+10017,Selena De Leon,Account Team Leader,Sick Leave,2024-03-29,2024-03-30,Pending
+10018,Allison San Jose,Account Rank and File,Vacation Leave,2024-06-01,2024-06-07,Pending
+10019,Cydney Rosario,Account Rank and File,Emergency Leave,2024-04-12,2024-04-13,Pending
